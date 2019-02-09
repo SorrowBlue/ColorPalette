@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2018 SorrowBlue
+  ~ http://sorrowblue.com/android-library
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~         http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+	<color name="color_palette_red">#F44336</color>
+	<color name="color_palette_pink">#E91E63</color>
+	<color name="color_palette_purple">#9C27B0</color>
+	<color name="color_palette_deep_purple">#673AB7</color>
+	<color name="color_palette_indigo">#3F51B5</color>
+	<color name="color_palette_blue">#2196F3</color>
+	<color name="color_palette_light_blue">#03A9F4</color>
+	<color name="color_palette_cyan">#00BCD4</color>
+	<color name="color_palette_teal">#009688</color>
+	<color name="color_palette_green">#4CAF50</color>
+	<color name="color_palette_light_green">#8BC34A</color>
+	<color name="color_palette_lime">#CDDC39</color>
+	<color name="color_palette_yellow">#FFEB3B</color>
+	<color name="color_palette_amber">#FFC107</color>
+	<color name="color_palette_orange">#FF9800</color>
+	<color name="color_palette_deep_orange">#FF5722</color>
+	<color name="color_palette_brown">#795548</color>
+	<color name="color_palette_gray">#9E9E9E</color>
+	<color name="color_palette_blue_gray">#607D8B</color>
+	<color name="color_palette_black">#000000</color>
+	<color name="color_palette_white">#FFFFFF</color>
+
+	<array name="color_palette_color_list">
+		<item>@color/color_palette_red</item>
+		<item>@color/color_palette_pink</item>
+		<item>@color/color_palette_purple</item>
+		<item>@color/color_palette_deep_purple</item>
+		<item>@color/color_palette_indigo</item>
+		<item>@color/color_palette_blue</item>
+		<item>@color/color_palette_light_blue</item>
+		<item>@color/color_palette_cyan</item>
+		<item>@color/color_palette_teal</item>
+		<item>@color/color_palette_green</item>
+		<item>@color/color_palette_light_green</item>
+		<item>@color/color_palette_lime</item>
+		<item>@color/color_palette_yellow</item>
+		<item>@color/color_palette_amber</item>
+		<item>@color/color_palette_orange</item>
+		<item>@color/color_palette_deep_orange</item>
+		<item>@color/color_palette_brown</item>
+		<item>@color/color_palette_gray</item>
+		<item>@color/color_palette_blue_gray</item>
+		<item>@color/color_palette_white</item>
+		<item>@color/color_palette_black</item>
+	</array>
+
+</resources>

@@ -1,0 +1,72 @@
+/*
+ * Copyright (C) 2018 SorrowBlue
+ * http://sorrowblue.com/android-library
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'com.google.gms.oss.licenses.plugin'
+
+android {
+	apply from: '../release.gradle', to: android
+	compileSdkVersion 28
+	defaultConfig {
+		applicationId "com.sorrowblue.android.colorpalettesample"
+		minSdkVersion 23
+		targetSdkVersion 28
+		versionCode 1
+		versionName "1.0"
+		testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+	}
+	buildTypes {
+		release {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+			signingConfig signingConfigs.release
+		}
+	}
+	dataBinding {
+		enabled = true
+	}
+}
+
+
+repositories {
+	maven {
+		url 'https://raw.githubusercontent.com/SorrowBlue/android-library/master/repository'
+	}
+}
+
+dependencies {
+	implementation fileTree(include: ['*.jar'], dir: 'libs')
+	implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+	implementation 'com.google.android.gms:play-services-oss-licenses:16.0.2'
+	implementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
+	implementation 'com.google.android:flexbox:1.1.0'
+	implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0-alpha02'
+	implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
+	testImplementation 'junit:junit:4.13-beta-2'
+	androidTestImplementation 'androidx.test:runner:1.1.2-alpha01'
+	androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.2-alpha01'
+	implementation project(':colorpalette')
+}
+
+
